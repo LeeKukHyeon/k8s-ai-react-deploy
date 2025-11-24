@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/LeeKukHyeon/k8s-ai-react-deploy
+    repoURL: https://github.com/LeeKukHyeon/k8s-ai-react-deploy.git
     targetRevision: main
     path: base
   destination:
