@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-ai-react
+  namespace: react
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-ai-react
+  template:
+    metadata:
+      labels:
+        app: k8s-ai-react
+    spec:
+      containers:
+      - name: k8s-ai-react
+        image: lkh8150/k8s-ai-react:latest  # 도커허브 이미지
+        ports:
+        - containerPort: 80
