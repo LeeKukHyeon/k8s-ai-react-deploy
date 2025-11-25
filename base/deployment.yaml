@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-ai-react
-  namespace: react
+  namespace: default
   annotations:
     # 여기서 Image Updater가 모니터링할 이미지와 전략 지정
     argocd-image-updater.argoproj.io/image-list: lkh8150/k8s-ai-react
